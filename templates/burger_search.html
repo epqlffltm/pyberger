@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>햄버거 검색</title>
+</head>
+<body>
+    <h1>햄버거 검색</h1>
+    <div>
+      <form>
+        <input type="text" name="keyword" placeholder="햄버거 이름 검색 하기">
+        <button>검색</button>
+      </form>
+    </div>
+    {% for burger in burgers %}
+    <div>
+      {{burger.name}}
+      price: {{burger.price}}
+      calories: {{burger.calories}}kcal
+    </div>
+    {% endfor %}
+</body>
+</html>
