@@ -1,0 +1,4 @@
+echo -e "venv/\n__pycache__/\n*.pyc\n.DS_Store\n.vscode/" > .gitignore
+git add .gitignore
+git commit -m "add .gitignore"
+
