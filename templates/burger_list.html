@@ -7,6 +7,12 @@
 </head>
 <body>
     <h1>Burger List</h1>
-    <p>This is the burger list page.</p>
+    {% for burger in burgers %}
+    <div>
+      {{burger.name}}
+      price: {{burger.price}}
+      calories: {{burger.calories}}kcal
+    </div>
+    {% endfor %}
 </body>
 </html>
